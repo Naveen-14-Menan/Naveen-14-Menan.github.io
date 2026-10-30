@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Naveen Menan N S | Data Engineer</title>
   <meta name="description" content="Naveen Menan N S, data engineer in Bangalore. Snowflake, Oracle PL/SQL, AWS and Pentaho ETL pipelines, and Snowflake Cortex AI agents.">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script>
     /* Apply the saved theme before the page paints, to prevent a flash. */
@@ -50,7 +50,7 @@
         <p class="role">Data Engineer, Bangalore, India</p>
         <p class="tagline">I build and modernize data pipelines on Snowflake, Oracle and AWS. I also build AI agents on these pipelines.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="assets/resume.pdf" download>Download resume (PDF)</a>
+          <a class="btn btn-primary" href="resume.pdf" download>Download resume (PDF)</a>
           <a class="btn" href="https://www.linkedin.com/in/naveenmenan/" target="_blank" rel="noopener">View LinkedIn</a>
           <a class="btn" href="mailto:naveenmenan2014@gmail.com">Send an email</a>
         </div>
@@ -84,94 +84,143 @@
     <!-- ABOUT -->
     <section class="section wrap" id="about" aria-labelledby="about-h">
       <h2 id="about-h">About</h2>
-      <p class="lead">I am a data engineer with 6+ years at Dassault Systèmes. I work with Snowflake, Oracle PL/SQL, AWS and Pentaho ETL. My work covers cloud migration, data quality and data governance. I build Snowflake Cortex AI agents for data lineage and metadata.</p>
+      <p class="lead">Data engineer with 6+ years at Dassault Systèmes, building and modernizing production data platforms on Snowflake, Oracle PL/SQL, AWS and Pentaho ETL.</p>
+      <ul class="highlights">
+        <li>
+          <h3>Migration</h3>
+          <p>Moved schemas, data, stored procedures and validation logic from Oracle to Snowflake, and helped move Pentaho ETL code to Snowflake SQL. <span class="award">Collaborator Award</span></p>
+        </li>
+        <li>
+          <h3>Scale and cost</h3>
+          <p>Contributed to ODM Productization, which lowered infrastructure cost and pipeline latency and onboarded billion-record customer datasets. <span class="award">Champion Award</span></p>
+        </li>
+        <li>
+          <h3>Reliability</h3>
+          <p>Data quality checks, automated error handling and production troubleshooting across ETL workflows, with CI/CD through GitHub Actions.</p>
+        </li>
+        <li>
+          <h3>AI on the warehouse</h3>
+          <p>Built Snowflake Cortex agents that answer lineage and impact questions in plain English across 2,400+ tables and views.</p>
+        </li>
+      </ul>
     </section>
 
     <!-- WORK -->
     <section class="section wrap" id="work" aria-labelledby="work-h">
       <h2 id="work-h">Featured work</h2>
+      <div class="wip-scene">
+        <svg class="tower" viewBox="0 0 640 360" role="img" aria-labelledby="wip-title">
+          <title id="wip-title">A small builder robot assembling the clockwork inside a clock tower. This section is a work in progress.</title>
+
+          <!-- Tower -->
+          <path class="tower-roof" d="M150 70 L320 8 L490 70 Z"/>
+          <rect class="tower-body" x="160" y="70" width="320" height="282" rx="4"/>
+          <line class="tower-floor" x1="160" y1="300" x2="480" y2="300"/>
+
+          <!-- Clock face -->
+          <circle class="clock-face" cx="320" cy="140" r="58"/>
+          <g class="ticks">
+            <line x1="320" y1="88" x2="320" y2="98"/><line x1="320" y1="182" x2="320" y2="192"/>
+            <line x1="268" y1="140" x2="278" y2="140"/><line x1="362" y1="140" x2="372" y2="140"/>
+            <line x1="346" y1="95" x2="343" y2="100"/><line x1="365" y1="114" x2="360" y2="117"/>
+            <line x1="365" y1="166" x2="360" y2="163"/><line x1="346" y1="185" x2="343" y2="180"/>
+            <line x1="294" y1="185" x2="297" y2="180"/><line x1="275" y1="166" x2="280" y2="163"/>
+            <line x1="275" y1="114" x2="280" y2="117"/><line x1="294" y1="95" x2="297" y2="100"/>
+          </g>
+          <line class="hand hand-hour" x1="320" y1="140" x2="320" y2="112"/>
+          <line class="hand hand-minute" x1="320" y1="140" x2="320" y2="96"/>
+          <circle class="hub" cx="320" cy="140" r="4"/>
+
+          <!-- Gears -->
+          <g class="gear gear-big">
+            <circle cx="262" cy="252" r="30" class="gear-teeth"/>
+            <circle cx="262" cy="252" r="20" class="gear-rim"/>
+            <circle cx="262" cy="252" r="5" class="gear-axle"/>
+          </g>
+          <g class="gear gear-small">
+            <circle cx="314" cy="236" r="18" class="gear-teeth"/>
+            <circle cx="314" cy="236" r="11" class="gear-rim"/>
+            <circle cx="314" cy="236" r="4" class="gear-axle"/>
+          </g>
+          <g class="gear gear-tiny">
+            <circle cx="300" cy="280" r="12" class="gear-teeth"/>
+            <circle cx="300" cy="280" r="4" class="gear-axle"/>
+          </g>
+
+          <!-- Ladder -->
+          <g class="ladder">
+            <line x1="180" y1="300" x2="200" y2="200"/><line x1="200" y1="300" x2="220" y2="200"/>
+            <line x1="184" y1="280" x2="204" y2="280"/><line x1="188" y1="260" x2="208" y2="260"/>
+            <line x1="192" y1="240" x2="212" y2="240"/><line x1="196" y1="220" x2="216" y2="220"/>
+          </g>
+
+          <!-- Scaffold -->
+          <rect class="plank" x="350" y="262" width="110" height="8" rx="2"/>
+          <line class="pole" x1="360" y1="270" x2="360" y2="300"/>
+          <line class="pole" x1="450" y1="270" x2="450" y2="300"/>
+
+          <!-- Builder robot -->
+          <g class="bot">
+            <rect class="bot-body" x="388" y="216" width="34" height="38" rx="6"/>
+            <rect class="bot-head" x="391" y="190" width="28" height="24" rx="6"/>
+            <path class="bot-hat" d="M387 192 Q405 174 423 192 Z"/>
+            <rect class="bot-hat" x="384" y="190" width="42" height="4" rx="2"/>
+            <circle class="bot-eye" cx="400" cy="203" r="3"/>
+            <circle class="bot-eye" cx="411" cy="203" r="3"/>
+            <rect class="bot-leg" x="393" y="254" width="8" height="8" rx="2"/>
+            <rect class="bot-leg" x="409" y="254" width="8" height="8" rx="2"/>
+            <g class="bot-arm">
+              <line x1="390" y1="226" x2="350" y2="238"/>
+              <path class="wrench" d="M350 238 L338 241 M336 236 A6 6 0 1 0 340 247"/>
+            </g>
+          </g>
+
+          <!-- Sparks where the wrench meets the gear -->
+          <g class="sparks">
+            <circle cx="333" cy="240" r="2.2"/><circle cx="327" cy="232" r="1.6"/><circle cx="329" cy="248" r="1.8"/>
+          </g>
+        </svg>
+
+        <span class="sticker s1" aria-hidden="true">Work in progress</span>
+        <span class="sticker s2" aria-hidden="true">Work in progress</span>
+        <span class="sticker s3" aria-hidden="true">Work in progress</span>
+        <span class="sticker s4" aria-hidden="true">Work in progress</span>
+
+        <a class="pin-card" href="#cases">
+          <span class="pin" aria-hidden="true"></span>
+          Scroll down for more info
+          <span class="pin-arrow" aria-hidden="true">&darr;</span>
+        </a>
+      </div>
+
       <p class="section-note">Select a project to see the problem, what I did, and the result.</p>
 
-      <div class="cases">
+      <div class="cases" id="cases">
         <details class="case">
           <summary>
+            <span class="sticker sticker-card" aria-hidden="true">Work in progress</span>
             <span class="case-title">ODM Productization</span>
             <span class="case-tag">Champion Award</span>
             <span class="case-line">Lower cost, lower latency, and support for billion-record datasets.</span>
           </summary>
-          <dl class="par">
-            <dt>Problem</dt>
-            <dd><span class="ph">[PLACEHOLDER: what ODM is and why it was slow]</span></dd>
-            <dt>Action</dt>
-            <dd>Built a component that generates legacy UUIDs, which reduced the dependency on legacy UUID generator code.</dd>
-            <dt>Result</dt>
-            <dd>
-              <ul>
-                <li>Cost decreased from <span class="ph">[PLACEHOLDER]</span> to <span class="ph">[PLACEHOLDER]</span> per month.</li>
-                <li>Pipeline latency decreased from <span class="ph">[PLACEHOLDER]</span> to <span class="ph">[PLACEHOLDER]</span>.</li>
-                <li>Enabled billion-record customer datasets.</li>
-              </ul>
-            </dd>
-          </dl>
         </details>
 
         <details class="case">
           <summary>
+            <span class="sticker sticker-card" aria-hidden="true">Work in progress</span>
             <span class="case-title">AI-Powered ODM Lineage Chatbot</span>
             <span class="case-tag">Hackathon</span>
             <span class="case-line">An AI agent that answers lineage and impact questions in plain English.</span>
           </summary>
-          <dl class="par">
-            <dt>Problem</dt>
-            <dd><span class="ph">[PLACEHOLDER: why lineage questions were hard to answer before]</span></dd>
-            <dt>Action</dt>
-            <dd>
-              <ul>
-                <li>Built a Snowflake Cortex Agent (text-to-SQL) that answers lineage and impact questions in English.</li>
-                <li>Built a second agent that uses secure views, role-based access and audit logs.</li>
-                <li>Led the project and mentored the team.</li>
-              </ul>
-            </dd>
-            <dt>Result</dt>
-            <dd>Cataloged metadata for 2,400+ tables and views and approximately 850 procedures.</dd>
-          </dl>
         </details>
 
         <details class="case">
           <summary>
+            <span class="sticker sticker-card" aria-hidden="true">Work in progress</span>
             <span class="case-title">Oracle to Snowflake migration</span>
             <span class="case-tag">Collaborator Award</span>
             <span class="case-line">Moved schemas, data, stored procedures and validation logic to Snowflake.</span>
           </summary>
-          <dl class="par">
-            <dt>Problem</dt>
-            <dd><span class="ph">[PLACEHOLDER: why the team moved from Oracle to Snowflake]</span></dd>
-            <dt>Action</dt>
-            <dd>
-              <ul>
-                <li>Migrated schemas, data, stored procedures and validation logic.</li>
-                <li>Optimized Oracle PL/SQL queries.</li>
-                <li>Helped migrate Pentaho ETL code to Snowflake SQL.</li>
-              </ul>
-            </dd>
-            <dt>Result</dt>
-            <dd><span class="ph">[PLACEHOLDER]</span></dd>
-          </dl>
-        </details>
-
-        <details class="case">
-          <summary>
-            <span class="case-title">AWS ingestion and reporting pipeline</span>
-            <span class="case-line">Ingestion and reporting with Java, Step Functions, Kinesis, S3 and Snowflake.</span>
-          </summary>
-          <dl class="par">
-            <dt>Problem</dt>
-            <dd><span class="ph">[PLACEHOLDER]</span></dd>
-            <dt>Action</dt>
-            <dd>Built a pipeline with Java, Step Functions, Kinesis, S3 and Snowflake.</dd>
-            <dt>Result</dt>
-            <dd><span class="ph">[PLACEHOLDER]</span></dd>
-          </dl>
         </details>
       </div>
     </section>
@@ -211,7 +260,7 @@
     <!-- EDUCATION -->
     <section class="section wrap" id="education" aria-labelledby="edu-h">
       <h2 id="edu-h">Education</h2>
-      <p class="edu"><strong>Amrita Vishwa Vidyapeetham</strong><br>B.Tech, Mechanical Engineering, 2020<br>CGPA 8.78 / 10</p>
+      <p class="edu"><strong>Amrita Vishwa Vidyapeetham</strong><br>B.Tech, Mechanical Engineering, 2016 - 2020</p>
     </section>
 
     <!-- CONTACT -->

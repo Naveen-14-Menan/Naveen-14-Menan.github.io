@@ -13,8 +13,8 @@ Website URL: https://naveen-14-menan.github.io
 | `index.html` | The page content and structure |
 | `style.css` | The design, light mode and dark mode |
 | `script.js` | The theme button and the footer year |
-| `assets/favicon.svg` | The browser tab icon |
-| `assets/resume.pdf` | The resume that visitors download |
+| `favicon.svg` | The browser tab icon |
+| `resume.pdf` | The resume that visitors download |
 
 ## Edit the content
 
@@ -31,7 +31,7 @@ Website URL: https://naveen-14-menan.github.io
 
 1. Export the new resume as a PDF.
 2. Name the file `resume.pdf`.
-3. Put the file in the `assets` folder. Replace the old file.
+3. Upload the file to the root of this repository. Replace the old file.
 
 ## Publish with GitHub Pages
 
