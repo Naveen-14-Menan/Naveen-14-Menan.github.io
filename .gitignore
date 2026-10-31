@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Dependencies and build output (only needed if a build step is added later)
+node_modules/
+dist/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Large source files that must not be published
+*.psd
+*.blend
+*.mp4
+
+# Local handoff notes (not for the public site)
+HANDOFF.md

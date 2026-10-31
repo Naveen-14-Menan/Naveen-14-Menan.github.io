@@ -1,0 +1,136 @@
+/* ===== Featured work: work-in-progress scene ===== */
+.wip-scene {
+  position: relative;
+  max-width: 820px;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.tower { display: block; width: 100%; height: auto; }
+
+.tower-roof { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; }
+.tower-body { fill: var(--bg); stroke: var(--line); stroke-width: 2; }
+.tower-floor { stroke: var(--line); stroke-width: 2; }
+.clock-face { fill: var(--surface); stroke: var(--ink); stroke-width: 3; }
+.ticks line { stroke: var(--muted); stroke-width: 2; stroke-linecap: round; }
+.hand { stroke: var(--ink); stroke-linecap: round; transform-box: view-box; transform-origin: 320px 140px; }
+.hand-hour { stroke-width: 5; }
+.hand-minute { stroke-width: 3; }
+.hub { fill: var(--accent); }
+
+.gear-teeth { fill: none; stroke: var(--muted); stroke-width: 9; stroke-dasharray: 5 4; }
+.gear-rim { fill: var(--surface); stroke: var(--muted); stroke-width: 3; }
+.gear-axle { fill: var(--accent); }
+.gear-small .gear-teeth, .gear-small .gear-rim { stroke: var(--accent); }
+.gear { transform-box: fill-box; transform-origin: center; }
+
+.ladder line { stroke: var(--muted); stroke-width: 3; stroke-linecap: round; }
+.plank { fill: var(--muted); }
+.pole { stroke: var(--muted); stroke-width: 3; }
+
+.bot-body, .bot-head { fill: var(--surface); stroke: var(--ink); stroke-width: 2.5; }
+.bot-hat { fill: var(--accent); }
+.bot-eye { fill: var(--accent); }
+.bot-leg { fill: var(--ink); }
+.bot-arm line { stroke: var(--ink); stroke-width: 4; stroke-linecap: round; }
+.wrench { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linecap: round; }
+.bot-arm { transform-box: view-box; transform-origin: 390px 226px; }
+.sparks circle { fill: #f5b301; opacity: 0; }
+
+/* Stickers: fixed colors so they read in both themes */
+.sticker {
+  position: absolute;
+  z-index: 2;
+  padding: 0.3rem 0.65rem;
+  background: #ffd23f;
+  color: #1d1a12;
+  border: 2px solid #1d1a12;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 2px 3px 0 rgba(29, 26, 18, 0.35);
+  pointer-events: none;
+}
+.s1 { top: 8%;  left: 3%;  transform: rotate(-8deg); }
+.s2 { top: 14%; right: 4%; transform: rotate(7deg); }
+.s3 { top: 48%; left: 6%;  transform: rotate(5deg); }
+.s4 { top: 40%; right: 9%; transform: rotate(-6deg); }
+
+.case { position: relative; }
+.sticker-card {
+  top: -0.7rem;
+  right: 3.25rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  transform: rotate(3deg);
+}
+.case:nth-child(even) .sticker-card { transform: rotate(-3deg); }
+
+/* Pinned card */
+.pin-card {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: max-content;
+  max-width: 90%;
+  margin: -0.5rem auto 1.25rem;
+  padding: 1rem 1.25rem 0.8rem;
+  background: #fff8e1;
+  color: #2b2615;
+  border: 1px solid #e3d6a8;
+  border-radius: 4px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transform: rotate(-2deg);
+  transform-origin: 50% 0;
+}
+.pin-card:hover { text-decoration: underline; }
+.pin {
+  position: absolute;
+  top: -7px; left: 50%;
+  width: 14px; height: 14px;
+  margin-left: -7px;
+  border-radius: 50%;
+  background: #d64545;
+  box-shadow: inset -2px -2px 0 rgba(0, 0, 0, 0.25);
+}
+.pin-arrow { display: block; font-size: 1.2rem; line-height: 1; margin-top: 0.25rem; }
+
+@media (max-width: 560px) {
+  .sticker { font-size: 0.65rem; padding: 0.2rem 0.45rem; }
+  .s3, .s4 { display: none; }
+  .wip-scene { padding: 0.5rem 0.5rem 0; }
+  .pin-card { margin-top: 0.75rem; padding: 0.75rem 1rem 0.6rem; font-size: 0.9rem; }
+  .sticker-card { right: 2.75rem; }
+}
+
+/* Motion (skipped when the visitor prefers reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .hand-minute { animation: spin 6s linear infinite; }
+  .hand-hour { animation: spin 72s linear infinite; }
+  .gear-big { animation: spin 8s linear infinite; }
+  .gear-small { animation: spin-back 4.8s linear infinite; }
+  .gear-tiny { animation: spin-back 3.2s linear infinite; }
+  .bot-arm { animation: crank 1.2s ease-in-out infinite alternate; }
+  .bot { animation: bob 1.2s ease-in-out infinite alternate; }
+  .sparks circle { animation: spark 1.2s ease-out infinite; }
+  .sparks circle:nth-child(2) { animation-delay: 0.15s; }
+  .sparks circle:nth-child(3) { animation-delay: 0.3s; }
+  .pin-card { animation: sway 3s ease-in-out infinite alternate; }
+  .pin-arrow { animation: nudge 1.4s ease-in-out infinite; }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spin-back { to { transform: rotate(-360deg); } }
+@keyframes crank { from { transform: rotate(-10deg); } to { transform: rotate(12deg); } }
+@keyframes bob { from { transform: translateY(0); } to { transform: translateY(-2px); } }
+@keyframes spark { 0%, 40% { opacity: 0; } 55% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes sway { from { transform: rotate(-3deg); } to { transform: rotate(2deg); } }
+@keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+
+

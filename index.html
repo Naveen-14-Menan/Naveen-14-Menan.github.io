@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Naveen Menan N S | Data Engineer</title>
   <meta name="description" content="Naveen Menan N S, data engineer in Bangalore. Snowflake, Oracle PL/SQL, AWS and Pentaho ETL pipelines, and Snowflake Cortex AI agents.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/hero-3d.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/scene-wip.css">
+  <link rel="stylesheet" href="assets/css/scene-clocktower.css">
   <script>
     /* Apply the saved theme before the page paints, to prevent a flash. */
     (function () {
@@ -18,7 +26,7 @@
       } catch (e) { /* Storage blocked: use the system setting. */ }
     })();
   </script>
-  <script src="script.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -44,13 +52,16 @@
 
   <main id="main">
     <!-- HERO -->
+    <div class="hero-stage">
+    <canvas class="scene-canvas" aria-hidden="true"></canvas>
+    <div class="scene-labels" aria-hidden="true"></div>
     <section class="hero wrap" id="top">
       <div class="hero-text">
         <h1>Naveen Menan N S</h1>
         <p class="role">Data Engineer, Bangalore, India</p>
         <p class="tagline">I build and modernize data pipelines on Snowflake, Oracle and AWS. I also build AI agents on these pipelines.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="resume.pdf" download>Download resume (PDF)</a>
+          <a class="btn btn-primary" href="assets/files/resume.pdf" download>Download resume (PDF)</a>
           <a class="btn" href="https://www.linkedin.com/in/naveenmenan/" target="_blank" rel="noopener">View LinkedIn</a>
           <a class="btn" href="mailto:naveenmenan2014@gmail.com">Send an email</a>
         </div>
@@ -80,6 +91,7 @@
         <figcaption>The stack I work across, from source systems to AI agents.</figcaption>
       </figure>
     </section>
+    </div>
 
     <!-- ABOUT -->
     <section class="section wrap" id="about" aria-labelledby="about-h">

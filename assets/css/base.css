@@ -1,0 +1,38 @@
+/* ===== Base ===== */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; }
+
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0; }
+
+.wrap { width: min(100% - 2.5rem, 1040px); margin-inline: auto; }
+
+.skip {
+  position: absolute; left: 1rem; top: -3rem;
+  background: var(--accent); color: var(--accent-ink);
+  padding: 0.5rem 0.9rem; border-radius: var(--radius-sm); z-index: 20;
+}
+.skip:focus { top: 0.75rem; }
+
